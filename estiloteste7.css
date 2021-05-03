@@ -1,0 +1,299 @@
+html,body
+{
+	overflow-x: hidden;
+
+}
+body,#body
+{
+	background: #F0FFF0;
+}
+ul
+{
+	list-style: none;
+}
+/*conf img principal carrousel desktop 1200px>*/
+	div.carousel-caption
+	{
+		bottom: 0;
+		padding: 0;
+		background-color: rgba(0, 0, 0, 0.8);
+		right: 0;
+		left: 0;
+	}
+	.TextLegImg
+	{
+		
+		color: white;
+		background-size: 15%;
+		padding-left: 15%;
+		padding-right: 15%;
+	}
+
+
+
+/*conf imagens miku*/
+.bordaclara
+{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.bordainf
+{
+	margin-bottom: 10px;
+}
+.tirardecoration
+{
+    text-decoration: none;
+}
+/*estado hover dos links nos cards*/
+section .card
+{
+	border: none;
+}
+section .card a:hover 
+{
+	text-decoration: none;
+	border: 1px dotted #d8d8d8;
+
+}
+section #maislida a:hover 
+{
+	text-decoration: none;
+	background:none; 
+	border:none;
+}
+/*Cores e fontes noticias*/
+#notleft h3
+{
+	color: red;
+}
+#notleft p , #notright p
+{
+	color: black;
+}
+/*Cores e fontes noticias especiais*/
+#notright h3
+{
+	color: blue;
+}
+/*Rodapé*/
+footer
+{
+	margin-top:10px; 
+	padding: 20px 0px 0px 0;
+	position: relative;
+}
+footer h4
+{
+	margin-top: 10px;
+	color: #919496;
+	font-size: 0.8em;
+	text-transform: uppercase; 
+}
+footer p
+{
+	text-align: center;
+}
+footer .navbar-nav a /*cores e tamanho dos links*/
+{
+	margin-top: 50px;
+	color: white;
+	font-size: 0.8em;
+}
+footer .navbar-nav a:hover /*cores e tamanho dos links*/
+{
+	color: #9bf0e1;
+	text-decoration: none;
+}
+footer ul/*tirar o marcador da lista*/
+{
+	list-style: none;
+}
+
+footer ul li 
+{
+	margin: 20px 20px 0 0;
+	float: right;/*imagens a direita uma da outra(tirar da vertical e colocar na horinzontal*/
+	margin: 0 5px;
+}
+/*MEDIA QUERIES - tamanho da letra no h1 dependendo do tamanho da tela*/
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) 
+{
+	/*conf do carousel*/
+	div.carousel-caption
+	{
+		bottom: 0;
+		padding: 0;
+		background-color: rgba(0, 0, 0, 0.8);
+		right: 0;
+		left: 0;
+		top: 60%;
+	}
+	/*conf das legendas das img principal carrousel*/
+	.TextLegImg h2
+	{
+		font-size: 1.2em;
+	}
+	.TextLegImg p
+	{
+		font-size: 0.8em;
+		margin-top: -3%;
+	}
+	/*barra de pesquisa(la no head)*/
+	input.form-control
+	{
+    width: 80%;
+	}
+	/*rodapé*/
+	footer h4
+	{
+		margin: 10px 0 10px 15px;
+		
+	}
+	footer .navbar-nav a
+	{
+		margin: 10px 0 10px 15px;
+		
+	}
+}
+
+/*Small devices (landscape phones, 576px and up)*/ 
+@media (min-width: 576px) and (max-width: 767.98px) 
+{
+	
+	/*conf do carousel*/
+	div.carousel-caption
+	{
+		bottom: 0;
+		padding: 0;
+		background-color: rgba(0, 0, 0, 0.8);
+		right: 0;
+		left: 0;
+		top: 60%;
+	}
+	/*conf das legendas das img principal carrousel*/
+	.TextLegImg h2
+	{
+		font-size: 1.2em;
+	}
+	.TextLegImg p
+	{
+		font-size: 0.8em;
+		margin-top: -1%;
+	}
+	/*barra de pesquisa(la no head)*/
+	input.form-control.form-control-lg
+	{
+    width: 70%;
+	}
+	/*rodape*/
+	footer h4
+	{
+		margin: 10px 0 10px 15px;
+		
+	}
+	footer .navbar-nav a
+	{
+		margin: 10px 0 10px 15px;
+		
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) 
+{
+	/*conf do carousel*/
+	div.carousel-caption
+	{
+		bottom: 0;
+		padding: 0;
+		background-color: rgba(0, 0, 0, 0.8);
+		right: 0;
+		left: 0;
+		top: 60%;
+	}
+	/*posicionamento da section em tela diferente*/
+	section .layout
+	{
+	padding-left: ;
+	margin-left: 30px;
+	}
+	/*rodape*/
+	footer ul.posicao/*tirou da horizontal para vertical(não sei como mas foi)*/
+	{
+		float: right;
+		margin-left: -100%;
+	}
+	footer ul li a
+	{
+		margin-top: 50%;
+	}
+
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) 
+{
+	/*conf do carousel*/
+	div.carousel-caption
+	{
+		bottom: 0;
+		padding: 0;
+		background-color: rgba(0, 0, 0, 0.8);
+		right: 0;
+		left: 0;
+		top: 70%;
+	}
+	/*barra de pesquisa(la no head)*/
+	input.form-control.form-control-lg
+	{
+    width: 300px;
+	}
+	h4
+	{
+		font-size: 5em;
+	}
+	/*posicionamento da section em tela diferente*/
+	section .layout
+	{
+	padding-left: ;
+	margin-left: 30px;
+	}
+	/*rodapé*/
+	footer ul.posicao/*tirou da horizontal para vertical(não sei como mas foi)*/
+	{
+		float: right;
+		margin-left: -100%;
+	}
+	footer ul li a
+	{
+		margin-top: 50%;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px)
+{
+	/*barra de pesquisa(la no head)*/
+	input.form-control.form-control-lg
+	{
+    width: 380px;
+	}
+	/*posicionamento da section em tela diferente*/
+	section .layout
+	{
+	padding-left: ;
+	margin-left: 50px;
+	}
+	/*rodape botoes*/
+	footer .posicao
+	{
+		margin-top: 28px;
+	}
+	footer ul li 
+	{
+	margin: 20px 20px 0 0;
+	float: right;/*imagens a direita uma da outra(tirar da vertical e colocar na horinzontal*/
+	margin: 0 5px;
+	}
+}
